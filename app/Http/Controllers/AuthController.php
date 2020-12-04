@@ -12,7 +12,7 @@ use Auth;
 
 class AuthController extends Controller
 {
-	public function register(Request $request, User $user) 
+	public function Register(Request $request, User $user) 
 	{
 		$this->validate($request, [
 			'name'		=> 'required',
@@ -30,7 +30,7 @@ class AuthController extends Controller
 		return new UserResource($user);
 	}
 
-	public function login(Request $request, User $user) 
+	public function Login(Request $request, User $user) 
 	{
 		if(!Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
 			return response()->json(['error' => 'Your credential is wrong'], 401);
