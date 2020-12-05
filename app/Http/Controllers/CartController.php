@@ -34,4 +34,23 @@ class CartController extends Controller
 
 		return CartResource::collection($cart);
 	}
+
+	public function Delete(Request $request, Cart $cart)
+    {
+        $this->authorize('delete', $cart);
+
+        $cart->delete();
+
+        return response()->json(json_decode('{"message" : "deleted" }'), 200);
+	}
+	
+	public function Update(Request $request, Cart $cart)
+	{
+		$this->authorize('update', $cart);
+
+		$cart->qty = $request->get('qty', $cart->qty);
+		$cart->save();
+
+		return new CartResource($cart);
+	}
 }
