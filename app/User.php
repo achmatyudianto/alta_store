@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Cart;
+use App\Transaction;
 
 class User extends Authenticatable
 {
@@ -43,7 +44,21 @@ class User extends Authenticatable
         return $this->hasMany(Cart::class, 'id');
     }
 
+    public function transactions()
+    {
+        return $this->hasMany(Transactions::class, 'id');
+    }
+
+    public function transaction_details()
+    {
+        return $this->hasMany(TransactionDetail::class, 'id');
+    }
+
     public function ownsCart(Cart $cart) {
         return auth()->id() == $cart->user_id;
+    }
+    
+    public function ownsTransaction(Transaction $transaction) {
+        return auth()->id() == $transaction->user_id;
     }
 }
