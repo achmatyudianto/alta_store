@@ -16,4 +16,10 @@ Route::group(['middleware' => 'auth:api'], function(){
 	Route::get('cart', 'CartController@FecthAllCart');
 	Route::put('cart/{cart}', 'CartController@Update');
 	Route::delete('cart/{cart}', 'CartController@Delete');
+	//checkout
+	Route::post('checkout', 'TransactionController@Checkout');
+	Route::get('checkout', 'TransactionController@FecthAllTransaction');
+	//payment
+	Route::put('payment/{transaction}', 'TransactionController@Payment');
+	Route::get('payment', 'TransactionController@FecthAllPayment');
 });
