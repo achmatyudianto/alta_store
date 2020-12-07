@@ -141,3 +141,52 @@
         **Auth required** : YES
 
         **Response Success** : Contoh ``` {"message": "deleted"} ```
+        
+     * Checkout
+    
+        **url** : `/api/checkout`
+
+        **Method** : `POST`
+        
+        **Auth required** : YES
+        
+        **Body** : Contoh
+        
+        ```
+        {
+            "data" : [
+                {"id" : 1},
+                {"id": 3}
+            ]
+        }
+        ```
+
+        **Response Success** : Contoh 
+        
+        ```
+        {
+            "data": {
+                "id": 1,
+                "paid": "0",
+                "created_at": "07/12/2020 07:06:26",
+                "transaction_details": [
+                    {
+                        "id": 1,
+                        "production_id": "1",
+                        "product_name": "Mixer",
+                        "price": 30000,
+                        "qty": 2,
+                        "amount": 60000
+                    },
+                    {
+                        "id": 2,
+                        "production_id": "2",
+                        "product_name": "Dispenser",
+                        "price": 40000,
+                        "qty": 4,
+                        "amount": 160000
+                    }
+                ]
+            }
+        }
+        ```
