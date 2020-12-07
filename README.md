@@ -43,3 +43,30 @@
     Endpoint tertutup membutuhkan Token yang valid untuk dimasukkan ke dalam header permintaan. Token dapat diperoleh melalui Login.
     * Login `POST /api/auth/login`
     * Registrasi `POST /api/auth/register`
+    
+* **Keranjang/Cart**
+    * Tambah Produk ke Keranjang
+    
+        **url** : `/api/cart`
+
+        **Method** : `PUT`
+        
+        **Auth required** : YES
+
+        **Body** : ``` { "product_id" : "[id_product]", "qty" : "[qty]" } ```
+
+        **Response** : Contoh
+
+        ```
+        {
+            "data": {
+                "id": 3,
+                "product_id": 2,
+                "product_name": "Dispenser",
+                "price": 40000,
+                "qty": 3,
+                "amount": 120000,
+                "created_at": "1 second ago"
+            }
+        }
+        ```
