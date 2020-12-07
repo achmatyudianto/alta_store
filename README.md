@@ -229,3 +229,41 @@
             ]
         }
         ```
+
+    * Transaksi Pembayaran
+    
+        **url** : `/api/payment/{transaction_id}`
+
+        **Method** : `PUT`
+        
+        **Auth required** : YES
+
+        **Response Success** : Contoh
+
+        ```
+        {
+            "data": {
+                "id": 1,
+                "paid": true,
+                "created_at": "07/12/2020 07:06:26",
+                "transaction_details": [
+                    {
+                        "id": 1,
+                        "production_id": "1",
+                        "product_name": "Mixer",
+                        "price": 30000,
+                        "qty": 2,
+                        "amount": 60000
+                    },
+                    {
+                        "id": 2,
+                        "production_id": "2",
+                        "product_name": "Dispenser",
+                        "price": 40000,
+                        "qty": 4,
+                        "amount": 160000
+                    }
+                ]
+            }
+        }
+        ```
