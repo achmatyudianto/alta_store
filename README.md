@@ -53,7 +53,7 @@
         
         **Auth required** : YES
 
-        **Body** : ``` { "product_id" : "[id_product]", "qty" : "[qty]" } ```
+        **Body** : ``` { "product_id" : [id_product], "qty" : [qty] } ``` ex:``` { "product_id" : 2, "qty" : 3 } ```
 
         **Response** : Contoh
 
