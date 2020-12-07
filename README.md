@@ -1,6 +1,6 @@
 ### API Dokumentasi
 * Categori & Produk
-   * Daftar Categori `GET /api/category`
+   * Daftar Kategori `GET /api/category`
         ##### Response
         ``` json
            {
@@ -16,7 +16,7 @@
                 ]
             }
        ```
-   * Daftar Product `GET /api/product?category_id={category_id}`
+   * Daftar Produk `GET /api/product?category_id={category_id}`
         ##### Response
         ``` json
             {
@@ -38,3 +38,8 @@
                 ]
             }
         ```
+* Autentikasi
+
+    Endpoint tertutup membutuhkan Token yang valid untuk dimasukkan ke dalam header permintaan. Token dapat diperoleh melalui Login.
+    * Login `POST /api/auth/login`
+    * Registrasi `POST /api/auth/register`
