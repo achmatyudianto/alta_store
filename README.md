@@ -2,7 +2,7 @@
 
 <img alt='erd' src='https://user-images.githubusercontent.com/30197099/101329770-65e17b00-38a4-11eb-89a7-b29df05a3da1.png' width='500' />
 
-### Installasi/
+### Installasi
  1. Install [PostgreSQL](https://www.postgresql.org)
  2. Install [Composer](https://getcomposer.org/download)
  3. composer update
