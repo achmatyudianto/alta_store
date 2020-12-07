@@ -1,3 +1,10 @@
+### Installasi
+ 1. Install [PostgreSQL](https://www.postgresql.org)
+ 2. Install [Composer](https://getcomposer.org/download)
+ 3. composer update
+ 4. php artisan migrate
+ 5. php artisan serve
+ 
 ### API Dokumentasi
 * **Categori & Produk**
    * Daftar/List Kategori `GET /api/category`
