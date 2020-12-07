@@ -131,4 +131,13 @@
             }
         }
         ```
+        
+    * Hapus Produk di Keranjang/Cart
+    
+        **url** : `/api/cart/{cart_id}`
 
+        **Method** : `DELETE`
+        
+        **Auth required** : YES
+
+        **Response Success** : Contoh ``` {"message": "deleted"} ```
