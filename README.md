@@ -45,6 +45,41 @@
     * Registrasi `POST /api/auth/register`
     
 * **Keranjang/Cart**
+    * Daftar Produk di Keranjang/Cart
+    
+        **url** : `/api/cart`
+
+        **Method** : `GET`
+        
+        **Auth required** : YES
+
+        **Response Success** : Contoh
+
+        ```
+        {
+            "data": [
+                {
+                    "id": 1,
+                    "product_id": 1,
+                    "product_name": "Mixer",
+                    "price": 30000,
+                    "qty": 2,
+                    "amount": 60000,
+                    "created_at": "2 days ago"
+                },
+                {
+                    "id": 2,
+                    "product_id": 2,
+                    "product_name": "Dispenser",
+                    "price": 40000,
+                    "qty": 2,
+                    "amount": 80000,
+                    "created_at": "2 days ago"
+                }
+            ]
+        }
+        ```
+        
     * Tambah Produk ke Keranjang/Cart
     
         **url** : `/api/cart`
@@ -53,7 +88,7 @@
         
         **Auth required** : YES
 
-        **Body** : ``` { "product_id" : [id_product], "qty" : [qty] } ``` ex:``` { "product_id" : 2, "qty" : 3 } ```
+        **Body** : ``` {"product_id" : [id_product], "qty" : [qty]} ``` ex:``` {"product_id" : 2, "qty" : 3} ```
 
         **Response Success** : Contoh
 
