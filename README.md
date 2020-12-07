@@ -47,7 +47,7 @@
         ```
 * **Autentikasi**
 
-    Endpoint tertutup membutuhkan Token yang valid untuk dimasukkan ke dalam header permintaan. Token dapat diperoleh melalui Login.
+    Endpoint tertutup membutuhkan [Token](https://laravel.com/docs/5.8/api-authentication) yang valid untuk dimasukkan ke dalam header permintaan. [Token](https://laravel.com/docs/5.8/api-authentication) dapat diperoleh melalui Login.
     * Login `POST /api/auth/login`
     * Registrasi `POST /api/auth/register`
     
