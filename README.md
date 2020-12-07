@@ -49,7 +49,7 @@
     
         **url** : `/api/cart`
 
-        **Method** : `PUT`
+        **Method** : `POST`
         
         **Auth required** : YES
 
