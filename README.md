@@ -45,7 +45,7 @@
     * Registrasi `POST /api/auth/register`
     
 * **Keranjang/Cart**
-    * Tambah Produk ke Keranjang
+    * Tambah Produk ke Keranjang/Cart
     
         **url** : `/api/cart`
 
@@ -70,3 +70,30 @@
             }
         }
         ```
+        
+    * Edit Kuantitas Produk di Keranjang/Cart
+    
+        **url** : `/api/cart/{cart_id}`
+
+        **Method** : `PUT`
+        
+        **Auth required** : YES
+
+        **Body** : ``` {"qty" : [qty]} ``` ex:``` {"qty" : 4} ```
+
+        **Response** : Contoh
+
+        ```
+        {
+            "data": {
+                "id": 3,
+                "product_id": 2,
+                "product_name": "Dispenser",
+                "price": 40000,
+                "qty": 4,
+                "amount": 120000,
+                "created_at": "1 second ago"
+            }
+        }
+        ```
+
