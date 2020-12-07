@@ -55,7 +55,7 @@
 
         **Body** : ``` { "product_id" : [id_product], "qty" : [qty] } ``` ex:``` { "product_id" : 2, "qty" : 3 } ```
 
-        **Response** : Contoh
+        **Response Success** : Contoh
 
         ```
         {
@@ -81,7 +81,7 @@
 
         **Body** : ``` {"qty" : [qty]} ``` ex:``` {"qty" : 4} ```
 
-        **Response** : Contoh
+        **Response Success** : Contoh
 
         ```
         {
