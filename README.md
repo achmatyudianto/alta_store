@@ -1,6 +1,6 @@
 ### API Dokumentasi
 * **Categori & Produk**
-   * Daftar Kategori `GET /api/category`
+   * Daftar/List Kategori `GET /api/category`
         ##### Response
         ``` json
            {
@@ -16,7 +16,7 @@
                 ]
             }
        ```
-   * Daftar Produk `GET /api/product?category_id={category_id}`
+   * Daftar/List Produk `GET /api/product?category_id={category_id}`
         ##### Response
         ``` json
             {
@@ -167,7 +167,7 @@
         {
             "data": {
                 "id": 1,
-                "paid": "0",
+                "paid": false,
                 "created_at": "07/12/2020 07:06:26",
                 "transaction_details": [
                     {
@@ -188,5 +188,44 @@
                     }
                 ]
             }
+        }
+        ```
+     * Daftar/List Checkout
+    
+        **url** : `/api/checkout`
+
+        **Method** : `GET`
+        
+        **Auth required** : YES
+
+        **Response Success** : Contoh 
+        
+        ``` 
+        {
+            "data": [
+                {
+                    "id": 1,
+                    "paid": false,
+                    "created_at": "07/12/2020 07:06:26",
+                    "transaction_details": [
+                        {
+                            "id": 1,
+                            "production_id": "1",
+                            "product_name": "Mixer",
+                            "price": 30000,
+                            "qty": 2,
+                            "amount": 60000
+                        },
+                        {
+                            "id": 2,
+                            "production_id": "2",
+                            "product_name": "Dispenser",
+                            "price": 40000,
+                            "qty": 4,
+                            "amount": 160000
+                        }
+                    ]
+                }
+            ]
         }
         ```
