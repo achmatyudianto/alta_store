@@ -278,3 +278,15 @@
             }
         }
         ```
+### Deploy
+* Daftar/List Kategori `GET https://altastore.mbiodo.com/api/category`
+* Daftar/List Produk `GET https://altastore.mbiodo.com/api/product`
+* Login `POST https://altastore.mbiodo.com/api/auth/login`
+* Registrasi `POST https://altastore.mbiodo.com/api/auth/register`
+* Tambah produk ke keranjang/cart `POST https://altastore.mbiodo.com/api/cart`
+* Daftar/List produk di keranjang/cart `GET https://altastore.mbiodo.com/api/cart`
+* Edit kuantitas produk di keranjang/cart `PUT https://altastore.mbiodo.com/api/cart/{cart}`
+* Hapus produk di keranjang/cart `DELETE https://altastore.mbiodo.com/api/cart/{cart}`
+* Checkout `POST https://altastore.mbiodo.com/api/checkout`
+* Daftar/List Checkout `GET https://altastore.mbiodo.com/api/checkout`
+* Payment/Pembayaran `PUT https://altastore.mbiodo.com/api/payment/{transaction_id}`
