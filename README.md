@@ -1,6 +1,6 @@
 ### Alta Store
 
-Sebuah project sederhana Backend(RESTFul API), Alta Store adalah sebuah toko ritel yang menjual berbagai macam produk seperti barang elektronik, alat olahraga, dan lain lain. Implementasi project ini menggunakan teknologi **[Laravel](https://laravel.com/)** dan database menggunakan **[PostgreSQL](https://www.postgresql.org/)**.
+Sebuah project sederhana Backend(RESTFul API). Alta Store adalah sebuah toko ritel yang menjual berbagai macam produk seperti barang elektronik, alat olahraga, dan lain lain. Implementasi project ini menggunakan teknologi **[Laravel](https://laravel.com/)** dan database menggunakan **[PostgreSQL](https://www.postgresql.org/)**.
 
 Fitur:
 * Customer dapat melihat **list product** berdasakan **product category**
