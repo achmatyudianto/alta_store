@@ -11,7 +11,7 @@ Fitur:
 
 ### Entity Relationship Diagram (ERD)
 
-<img alt='erd' src='https://user-images.githubusercontent.com/30197099/101329770-65e17b00-38a4-11eb-89a7-b29df05a3da1.png' width='500' />
+<img alt='erd' src='https://user-images.githubusercontent.com/30197099/101563294-97b92580-39fb-11eb-9f7d-7b8bcb11c514.png' width='500' />
 
 ### Installasi
  1. Install [PostgreSQL](https://www.postgresql.org)
