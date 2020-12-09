@@ -1,3 +1,14 @@
+### Alta Store
+
+Sebuah project sederhana Backend(RESTFul API), Alta Store adalah sebuah toko ritel yang menjual berbagai macam produk seperti barang elektronik, alat olahraga, dan lain lain. Implementasi project ini menggunakan teknologi **[Laravel](https://laravel.com/)** dan database menggunakan **[PostgreSQL](https://www.postgresql.org/)**.
+
+Fitur:
+* Customer dapat melihat **list product** berdasakan **product category**
+* Customer dapat memasukan **product** ke dalam **shopping cart**
+* Customer dapat melihat **list product** yang telah ditambahkan **shopping cart**
+* Customer dapat menghapus **list product** pada **shopping cart**
+* Customer dapat **checkout** dan melakukan **transaction**
+
 ### Entity Relationship Diagram (ERD)
 
 <img alt='erd' src='https://user-images.githubusercontent.com/30197099/101329770-65e17b00-38a4-11eb-89a7-b29df05a3da1.png' width='500' />
