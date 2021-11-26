@@ -12,6 +12,8 @@ class CartController extends Controller
 {
 	public function Store(Request $request, Cart $cart)
 	{
+        
+                    // TEts
 		$this->validate($request, [
 			'product_id'	=> 'required',
 			'qty'			=> 'required',
